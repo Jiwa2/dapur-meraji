@@ -16,7 +16,7 @@
     </ul>
 </nav>
 
-<!-- HOME -->
+<!-- HERO -->
 <main class="hero" id="home">
     <div class="hero-wrapper">
 
@@ -35,28 +35,12 @@
                 Silakan pilih menu di atas atau scroll untuk melihat produk kami
             </span>
 
-            <hr style="margin: 20px 0; border-color: #eee;">
-
-            <!-- Informasi / Contact -->
-            <h2>Kontak & Lokasi</h2>
-            <p><strong>Siti Solihat</strong></p>
-            <p><strong>Alamat:</strong> Dapur Meraji (Gmaps)</p>
-            <p><strong>Nomor HP:</strong> +6281807817907</p>
-
-            <!-- Tombol TikTok -->
-            <a href="https://www.tiktok.com/@siti.solihat132?_r=1&_t=ZS-92Vev8U7qI0" target="_blank" class="btn-tiktok">
-                Kunjungi TikTok
-            </a>
-            
-            <!-- Tombol WhatsApp -->
-            <a href="https://wa.me/6281807817907" target="_blank" class="btn-wa">
-                Hubungi via WhatsApp
-            </a>
-
-            <!-- Tombol Google Maps -->
-            <a href="https://maps.app.goo.gl/rF3BW1UqeLXYDUaQ6" target="_blank" class="btn-maps">
-                Lihat Lokasi di Maps
-            </a>
+            <!-- Tombol -->
+            <div class="hero-buttons">
+                <a href="https://wa.me/6281807817907" target="_blank" class="btn-wa">Hubungi via WhatsApp</a>
+                <a href="https://maps.app.goo.gl/rF3BW1UqeLXYDUaQ6" target="_blank" class="btn-maps">Lihat Lokasi di Maps</a>
+                <a href="https://www.tiktok.com/@usernamekamu" target="_blank" class="btn-tiktok">Kunjungi TikTok</a>
+            </div>
         </div>
 
     </div>
@@ -66,13 +50,21 @@
 <section class="menu-section" id="menu">
     <h2 class="menu-title">Menu Kami</h2>
 
-    <div class="menu-category">
+    <!-- Sub-navbar kategori -->
+    <div class="menu-subnav">
+        <a href="#catering" class="subnav-link">Catering</a>
+        <a href="#kuekering" class="subnav-link">Kue Kering</a>
+        <a href="#makananberat" class="subnav-link">Makanan Berat</a>
+    </div>
+
+    <!-- Catering -->
+    <div class="menu-category" id="catering">
         <h3>Catering</h3>
         <div class="menu-grid">
             <div class="menu-card">
-                <img src="assets/images/menu1.jpg">
+                <img src="assets/images/dcathering1.jpeg">
                 <h4>Paket Catering A</h4>
-                <p>Nasi, ayam, sayur, sambal</p>
+                <p>Nasi, Daging, Kentang balado, Sayur</p>
             </div>
             <div class="menu-card">
                 <img src="assets/images/menu2.jpg">
@@ -82,14 +74,10 @@
         </div>
     </div>
 
-    <div class="menu-category">
+    <!-- Kue Kering -->
+    <div class="menu-category" id="kuekering">
         <h3>Kue Kering</h3>
         <div class="menu-grid">
-            <div class="menu-card">
-                <img src="assets/images/dnastar.jpeg">
-                <h4>Nastar</h4>
-                <p>Lembut & legit</p>
-            </div>
             <div class="menu-card">
                 <img src="assets/images/kuecoklat.jpeg">
                 <h4>Kue Coklat</h4>
@@ -101,44 +89,50 @@
                 <p>Kacang Premium</p>
             </div>
             <div class="menu-card">
-                <img src="assets/images/dkue.jpeg">
-                <h4>Palm Cheese</h4>
-                <p>Mahal</p>
-            </div>
-            <div class="menu-card">
-                <img src="assets/images/dgepeng.jpeg">
-                <h4>Kue Gepeng</h4>
-                <p>Mahal</p>
-            </div>
-            <div class="menu-card">
                 <img src="assets/images/dstroberi.jpeg">
                 <h4>Kue Stroberi</h4>
-                <p>Mahal</p>
+                <p>Kacang Premium</p>
             </div>
             <div class="menu-card">
                 <img src="assets/images/dsalju.jpeg">
                 <h4>Kue Salju</h4>
-                <p>Mahal</p>
+                <p>Kacang Premium</p>
+            </div>
+            <div class="menu-card">
+                <img src="assets/images/dnastar.jpeg">
+                <h4>Nastar</h4>
+                <p>Kacang Premium</p>
             </div>
             <div class="menu-card">
                 <img src="assets/images/dkastengel.jpeg">
                 <h4>Kastengel</h4>
-                <p>Mahal</p>
+                <p>Kacang Premium</p>
+            </div>
+            <div class="menu-card">
+                <img src="assets/images/dgepeng.jpeg">
+                <h4>Kue Gepeng</h4>
+                <p>Kacang Premium</p>
             </div>
             <div class="menu-card">
                 <img src="assets/images/dbolucoklat.jpeg">
                 <h4>Bolu Coklat</h4>
-                <p>Mahal</p>
+                <p>Kacang Premium</p>
             </div>
             <div class="menu-card">
                 <img src="assets/images/dbolupisang.jpeg">
                 <h4>Bolu Pisang</h4>
-                <p>Mahal</p>
+                <p>Kacang Premium</p>
+            </div>
+            <div class="menu-card">
+                <img src="assets/images/dkue.jpeg">
+                <h4>Kue Coklat</h4>
+                <p>Kacang Premium</p>
             </div>
         </div>
     </div>
 
-    <div class="menu-category">
+    <!-- Makanan Berat -->
+    <div class="menu-category" id="makananberat">
         <h3>Makanan Berat</h3>
         <div class="menu-grid">
             <div class="menu-card">
@@ -160,19 +154,20 @@
     <p>© 2025 Dapur Meraji. All rights reserved.</p>
 </footer>
 
-<!-- ✅ SCRIPT ACTIVE NAV -->
+<!-- SCRIPT ACTIVE NAV -->
 <script>
 const sections = document.querySelectorAll("section, main");
 const navLinks = document.querySelectorAll(".nav-link");
-const navbarHeight = 120; // sesuaikan dengan tinggi navbar + padding
+const subLinks = document.querySelectorAll(".subnav-link");
+const categories = document.querySelectorAll(".menu-category");
+const navbarHeight = 120; // tinggi navbar
 
 function updateActiveLink() {
+    // Navbar utama
     let current = "";
-
     sections.forEach(section => {
         const sectionTop = section.offsetTop - navbarHeight;
         const sectionHeight = section.offsetHeight;
-
         if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
             current = section.getAttribute("id");
         }
@@ -184,15 +179,34 @@ function updateActiveLink() {
             link.classList.add("active");
         }
     });
+
+    // Sub-navbar kategori
+    let currentCat = "";
+    categories.forEach(cat => {
+        const top = cat.offsetTop - navbarHeight;
+        const height = cat.offsetHeight;
+        if (scrollY >= top && scrollY < top + height) {
+            currentCat = cat.getAttribute("id");
+        }
+    });
+
+    subLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + currentCat) {
+            link.classList.add("active");
+        }
+    });
 }
 
 window.addEventListener("scroll", updateActiveLink);
 window.addEventListener("load", updateActiveLink);
 
+// Smooth scroll delay for navbar clicks
 navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        setTimeout(updateActiveLink, 300);
-    });
+    link.addEventListener("click", () => { setTimeout(updateActiveLink, 300); });
+});
+subLinks.forEach(link => {
+    link.addEventListener("click", () => { setTimeout(updateActiveLink, 300); });
 });
 </script>
 
