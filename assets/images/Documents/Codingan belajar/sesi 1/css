@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int  main() [  
+    int num1, num2, temp
+
+    cout << "bil 1"
+    cin >> num1
+
+    cout << "bil2"
+    cin >> num2
+
+    temp = num1;
+    num1  = num2;
+    num2 = temp;
+
+    cout << "bil 1 setelah penukaran " << num1 << endl;
+    cout << "bil 2 setelah penukaran " << num2 << endl;
+]

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapur Meraji</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Dapur Meraji</div>
+    <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#tentang" class="nav-link">Tentang</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<main class="hero" id="home">
+    <div class="hero-wrapper">
+
+        <div class="hero-image">
+            <img src="assets/images/dapurmeraji.png" alt="Dapur Meraji">
+        </div>
+
+        <div class="hero-card">
+            <h1>Selamat Datang di Dapur Meraji</h1>
+            <p>
+                Usaha rumahan yang menyediakan catering,
+                bolu, kue kering, dan sembako
+                dengan rasa rumahan dan harga bersahabat.
+            </p>
+            <span>
+                Silakan pilih menu di atas untuk melihat produk
+            </span>
+        </div>
+
+    </div>
+</main>
+
+<!-- MENU -->
+<section class="menu-section" id="menu">
+    <h2 class="menu-title">Menu Kami</h2>
+
+    <div class="menu-category">
+        <h3>Catering</h3>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="assets/images/menu1.jpg">
+                <h4>Paket Catering A</h4>
+                <p>Nasi, ayam, sayur, sambal</p>
+            </div>
+            <div class="menu-card">
+                <img src="assets/images/menu2.jpg">
+                <h4>Paket Catering B</h4>
+                <p>Nasi, rendang, lalapan</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-category">
+        <h3>Kue Kering</h3>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="assets/images/menu3.jpg">
+                <h4>Nastar</h4>
+                <p>Lembut & legit</p>
+            </div>
+            <div class="menu-card">
+                <img src="assets/images/menu4.jpg">
+                <h4>Kastengel</h4>
+                <p>Keju premium</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-category">
+        <h3>Makanan Berat</h3>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="assets/images/menu5.jpg">
+                <h4>Ayam Geprek</h4>
+                <p>Pedas mantap</p>
+            </div>
+            <div class="menu-card">
+                <img src="assets/images/menu6.jpg">
+                <h4>Nasi Goreng</h4>
+                <p>Spesial rumahan</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TENTANG -->
+<section class="about-section" id="tentang">
+    <div class="about-wrapper">
+
+        <!-- KIRI: CARD INFO -->
+        <div class="about-card">
+            <h2>Tentang Kami</h2>
+            <p><strong>Siti Solihat</strong></p>
+            <p><strong>Alamat: </strong>Dapur Meraji (Gmaps)</p>
+            <p><strong>Nomor HP: </strong> +6281 8078 17907</p>
+            <a href="https://wa.me/6281807817907" target="_blank" class="btn-wa">
+                Hubungi via WhatsApp
+            </a>
+        </div>
+
+        <!-- KANAN: MAPS -->
+        <div class="about-map">
+            <a href="https://maps.app.goo.gl/rF3BW1UqeLXYDUaQ6" target="_blank">
+                <img src="assets/images/maps-screenshot.png" alt="Maps Rumah Kami">
+            </a>
+            <p class="map-note">Silahkan klik gambar untuk melihat detail lokasi</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ✅ SCRIPT ACTIVE NAV -->
+<script>
+const sections = document.querySelectorAll("section, main");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+
+</body>
+</html>

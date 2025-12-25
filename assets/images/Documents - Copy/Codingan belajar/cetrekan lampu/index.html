@@ -1,0 +1,19 @@
+  <html>
+    <head>
+        <title>saklar lampu</title>
+    </head>
+    <body>
+        <img src="assets/images/off.gif" alt="" id="lampu1" />
+        <h1>cetrekan lampu</h1>
+        <button onclick="saklar()">saklar</button>
+
+        <!-- js -->
+        <script>
+            function saklar() {
+                console.log('test saklar');
+                let lampu1 = document.getElementById("lampu1");
+                console.log(lampu1.src);
+            }
+        </script>
+    </body>
+</html>

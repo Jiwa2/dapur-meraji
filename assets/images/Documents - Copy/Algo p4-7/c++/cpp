@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() [
+    int bil1, bil2, temp
+
+    cout << "masukan bilangan 1";
+    cin >> bil;
+    
+    cout << "masukan bilangan 2";
+    cin >> bil2;
+
+    temp = bil1;
+    bil1 = bil2;
+    bil2 = temp;
+
+    cout << "bilangan 1 setelah penukaran ";
+    cout << "bilangan 2 setelah penukaran ";
+
+    return 0;
+
+]
