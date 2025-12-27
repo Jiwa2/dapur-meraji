@@ -296,3 +296,44 @@ body {
     color:#fff;
 }
 
+/* ===== MODAL IMAGE ===== */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 9999;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    animation: zoomIn 0.3s ease;
+}
+
+.modal-close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    font-size: 38px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* animasi */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
