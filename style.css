@@ -8,7 +8,7 @@ html { scroll-behavior: smooth; }
 }
 
 body { 
-    background:#fff8f5; 
+    background:#f1ecda;
     min-height:100vh; 
     overflow-x:hidden; 
 }
@@ -124,6 +124,7 @@ body {
 .menu-section { 
     padding:90px 0; 
     background:#fff; 
+    background:#f1ecda;
 }
 
 .menu-title { 
